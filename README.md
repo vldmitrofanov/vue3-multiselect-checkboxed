@@ -10,7 +10,7 @@ A simple Vuejs 3 plugin. Adds an old style multiselect form element with checkbo
 npm i vue3-multiselect-checkboxed
 ```
 
-## Usage
+## Usage:
 Setup part:
 ```html
 <script setup>
@@ -51,3 +51,14 @@ Template part:
 - [Publish a Vue Component to NPM // Vite and Vue 3 Youtube video](https://www.youtube.com/watch?v=5QV9wVc8c7g&ab_channel=LearnVue) <- you may subscribe to learn from these guys
 
 - [Dropdown with Multiple checkbox select with Vue.js](https://codepen.io/huleos/pen/xQaYdK) <-- this is basically where I've got the initial idea. Thanks Julio
+
+
+## Development:
+
+If you want to use this code for your own needs just do
+```bash
+git clone https://github.com/vldmitrofanov/vue3-multiselect-checkboxed.git
+cd vue3-multiselect-checkboxed
+npm install
+npm run dev
+```
