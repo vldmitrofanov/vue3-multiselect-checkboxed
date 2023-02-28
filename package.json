@@ -1,17 +1,20 @@
 {
     "name": "vue3-multiselect-checkboxed",
     "private": false,
-    "version": "0.0.6",
+    "version": "0.0.7",
     "license": "MIT",
     "keywords": ["vue3 multiselect", "vue3 composition api multiselect"],
     "description": "Adds a multiselect component with checkboxes",
     "main": "./dist/vue3-multiselect-checkboxed.umd.js",
     "module": "./dist/vue3-multiselect-checkboxed.js",
-    "homepage": "https://1243906.playcode.io",
+    "homepage": "https://github.com/vldmitrofanov/vue3-multiselect-checkboxed",
     "author": {
         "name": "Vlad",
         "email": "shirker2006@gmail.com",
         "url": "https://www.shirker.net"
+    },
+    "bugs": {
+        "url": "https://github.com/vldmitrofanov/vue3-multiselect-checkboxed/issues"
     },
     "exports": {
         ".": {
