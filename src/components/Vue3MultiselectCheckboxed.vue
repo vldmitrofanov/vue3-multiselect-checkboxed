@@ -20,10 +20,10 @@
       </div>
       <ul>
         <li v-show="filter.length < 3">
-          <label for="e553tee3xj">
+          <label>
             <input
               type="checkbox"
-              id="e553tee3xj"
+              ref="toggleAllIdRef"
               @change="toogleAll($event.target.checked)"
             />
             <span></span>
@@ -31,10 +31,9 @@
           >
         </li>
         <li v-for="(option, index) in options" :key="`fsjh${index}ruei`">
-          <label :for="`fsjkgh${index}ruytei`">
+          <label>
             <input
               type="checkbox"
-              :id="`fsjkgh${index}ruytei`"
               :value="option[bindValue]"
               v-model="selected"
             />
@@ -106,6 +105,7 @@ export default {
     const multiselectRef = ref(null)
     const selectWrapperRef = ref(null)
     const dropdownRef = ref(null)
+    const toggleAllIdRef = ref(null)
 
     // binding and results
     const bindLabel = ref(props.bindLabel || 'label')
@@ -174,12 +174,11 @@ export default {
     watch(
       () => selected.value,
       (value) => {
-        console.log('selected updated')
         emit('onVSelect', value)
         if (selected.value.length == propsOptions.value.length) {
-          document.getElementById('e553tee3xj').checked = true
+          toggleAllIdRef.value.checked = true
         } else {
-          document.getElementById('e553tee3xj').checked = false
+          toggleAllIdRef.value.checked = false
         }
       },
       { deep: true }
@@ -205,6 +204,7 @@ export default {
       multiselectRef,
       selectWrapperRef,
       dropdownRef,
+      toggleAllIdRef,
       bindLabel,
       bindValue,
       showDropdown,
