@@ -1,7 +1,7 @@
 {
     "name": "vue3-multiselect-checkboxed",
     "private": false,
-    "version": "0.0.8",
+    "version": "0.0.9",
     "license": "MIT",
     "keywords": ["vue3 multiselect", "vue3 composition api multiselect"],
     "description": "Adds a multiselect component with checkboxes",
