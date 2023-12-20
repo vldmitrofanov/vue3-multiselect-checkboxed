@@ -131,13 +131,15 @@ export default {
         }, 50)
       }
 
+      if (message.value == 'All Selected') {
+        toggleAllIdRef.value.checked = true
+      }
+
       selectWrapperRef.value.style.maxWidth = multiselectRef.value.offsetWidth + 'px'
-      console.log(selectWrapperRef.value.style)
     }
 
     const hideDropdown = () => {
       show.value = false
-      //console.log(show.value)
     }
 
     const toogleAll = (toggle) => {
@@ -156,7 +158,6 @@ export default {
       ) {
         return
       }
-      //console.log(event.target)
       hideDropdown()
       window.removeEventListener('click', useDetectOutsideClick)
     }
